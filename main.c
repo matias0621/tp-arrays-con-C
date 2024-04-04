@@ -123,3 +123,15 @@ void buscarCaracterEnArray(char *array, int dimension, char datoABuscar){
         printf("No se encontro el dato que buscabas");
     }
 }
+//---------------------------------------------Ejercicio 10 ------------------------------------------------------------------//
+int invertirArray(int *array, int dimension){
+    int valor = 0;
+    int valor2 = 0;
+    for(int i = 0; i <dimension; i++){
+        valor = array[i];
+        valor2 = array[dimension] - i;
+
+        array[dimension] = valor;
+        array[i] = valor;
+    }
+}
